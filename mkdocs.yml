@@ -29,7 +29,7 @@ theme:
     - navigation.indexes # Nav sections can have files
     - navigation.instant # Avoid page reloading for internal links
     - navigation.top
-    - navigation.tracking # Update URL with anchor
+    - navigation.tracking # Update URL with sub-heading anchor names
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -39,7 +39,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -63,8 +62,8 @@ markdown_extensions:
   - md_in_html # Grids
   - footnotes # footnotes and abbreviations
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
